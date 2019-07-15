@@ -26,7 +26,7 @@ class NoteAdapter(
     class ViewHolder(val view: View): RecyclerView.ViewHolder(view) {
 
         fun onBind(note: Note) {
-            view.titleViewNote.text = note.description
+            view.descriptionView.text = note.description
         }
 
     }
