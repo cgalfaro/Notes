@@ -30,12 +30,12 @@ class TasksListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerViewTasks.layoutManager = LinearLayoutManager(context)
         val adapter = TaskAdapter(mutableListOf(
             Task("Testing One!"),
             Task("Testing Two")
         ))
-        recyclerView.adapter = adapter
+        recyclerViewTasks.adapter = adapter
     }
 
     companion object {
